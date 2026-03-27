@@ -1,0 +1,582 @@
+/* ========== 版面 ========== */
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 12px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.userBadge {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.18);
+}
+
+/* ========== 登入頁 ========== */
+
+.loginWrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.loginCard {
+  width: min(420px, 100%);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.loginTitle {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.loginSubtitle {
+  margin-top: 6px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.loginBtnWrap {
+  margin-top: 8px;
+}
+
+.loginHint {
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+}
+
+.field {
+  display: block;
+  min-width: 0;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+}
+
+/* ========== 產品詳情頁（查看） ========== */
+
+.detailPagePanel {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detailSection {
+  margin-bottom: 28px;
+}
+
+.detailSectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.detailFields {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px 24px;
+}
+
+.detailField {
+  min-width: 0;
+}
+
+.detailFieldLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.detailFieldValue {
+  font-size: 15px;
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.detailFieldValue.mono {
+  font-variant-numeric: tabular-nums;
+}
+
+.detailCreator {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.detailCreatorTime {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.detailHistoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detailHistoryItem {
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.detailHistoryMeta {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.detailHistoryChanges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.detailHistoryChange {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.detailHistoryChangeLabel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+.detailHistoryChangeValues {
+  font-variant-numeric: tabular-nums;
+}
+
+.detailHistoryEmpty {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+/* ========== 篩選與表單 ========== */
+
+.filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 0.6fr) minmax(0, 0.8fr) minmax(0, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.filter {
+  min-width: 0;
+}
+
+.filter .labelSmall {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.25);
+  color: inherit;
+  outline: none;
+}
+
+.input:focus {
+  border-color: rgba(100, 108, 255, 0.55);
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.15);
+}
+
+.inputSmall {
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: inherit;
+  cursor: pointer;
+  margin: 2px 4px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnPrimary {
+  background: rgba(100, 108, 255, 0.22);
+  border-color: rgba(100, 108, 255, 0.45);
+}
+
+.btnPrimary:hover {
+  background: rgba(100, 108, 255, 0.28);
+}
+
+.btnDanger {
+  background: rgba(255, 70, 70, 0.16);
+  border-color: rgba(255, 70, 70, 0.35);
+}
+
+.btnDanger:hover {
+  background: rgba(255, 70, 70, 0.22);
+}
+
+.btnSmall {
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin: 2px 3px;
+}
+
+/* ========== 表格 ========== */
+
+.tableWrap {
+  overflow: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.15);
+  min-width: 980px;
+}
+
+.table th,
+.table td {
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 10, 14, 0.95);
+  z-index: 1;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.table th.colProductName,
+.table td.colProductName {
+  white-space: normal;
+}
+
+.table th.colUpdatedAt,
+.table td.colUpdatedAt {
+  padding-right: 2px;
+}
+
+.table td.note {
+  white-space: normal;
+}
+
+
+.table td.actions,
+.table th.actions {
+  text-align: right;
+  width: 1%;
+  white-space: nowrap;
+  padding-left: 4px;
+  padding-right: 10px;
+}
+
+.table tbody tr.rowClickable {
+  cursor: pointer;
+}
+
+.table tbody tr.rowClickable:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* 手機：列表改為卡片式排版 */
+@media (max-width: 768px) {
+  .tableWrap {
+    overflow: visible;
+    border: none;
+    border-radius: 0;
+  }
+
+  .table {
+    min-width: 0;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody tr {
+    display: block;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .table tbody tr.rowClickable:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .table tbody td {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: none;
+    white-space: normal;
+  }
+
+  .table tbody td:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .table tbody td::before {
+    content: attr(data-label);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+    flex-shrink: 0;
+  }
+
+  .table tbody td.mono {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table tbody tr.rowClickable {
+    cursor: pointer;
+  }
+
+  .table tbody td[colspan] {
+    display: block;
+    justify-content: unset;
+  }
+
+  .table tbody td[colspan]::before {
+    content: none;
+  }
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+.muted {
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  padding: 16px;
+}
+
+.alert {
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid transparent;
+}
+
+.alertError {
+  background: rgba(255, 70, 70, 0.12);
+  border-color: rgba(255, 70, 70, 0.25);
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.pagerRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.pagerLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ========== 對話框 ========== */
+
+.dialog {
+  width: min(760px, calc(100vw - 24px));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 0;
+  background: rgba(10, 10, 14, 0.95);
+  color: inherit;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.dialogTitle {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+}
+
+.dialogMessage {
+  padding: 14px 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dialogActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 14px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.formGrid {
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.fieldFull {
+  grid-column: 1 / -1;
+}
+
+.label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 6px;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.errorBox {
+  margin: 0 16px 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255, 70, 70, 0.12);
+  border: 1px solid rgba(255, 70, 70, 0.25);
+}
+
+/* ========== 響應式 ========== */
+
+@media (max-width: 900px) {
+  .filters {
+    grid-template-columns: 1fr 1fr;
+  }
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 14px;
+  }
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .headerActions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .filters {
+    grid-template-columns: 1fr;
+  }
+  .userBadge {
+    width: 100%;
+  }
+  .btn {
+    width: auto;
+  }
+  .pagerLeft,
+  .pagerRight {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

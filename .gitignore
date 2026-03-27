@@ -1,0 +1,18 @@
+node_modules
+dist
+.DS_Store
+
+# SQLite data
+backend/data
+backend/*.sqlite
+backend/*.sqlite-shm
+backend/*.sqlite-wal
+
+# 部署時由 frontend/dist 複製而來，不提交
+backend/public
+
+# env
+.env
+backend/.env
+frontend/.env
+
