@@ -250,7 +250,7 @@ async function seedIfEmpty(db: Db) {
   if ((userCount?.total ?? 0) === 0) {
     const now = new Date().toISOString();
     const users = [
-      { username: "admin", password: "admin123", displayName: "系統管理員", role: "admin" as const },
+      { username: "admin", password: "86180017", displayName: "系統管理員", role: "admin" as const },
       { username: "viewer", password: "viewer123", displayName: "查詢帳號", role: "viewer" as const },
     ];
     for (const u of users) {

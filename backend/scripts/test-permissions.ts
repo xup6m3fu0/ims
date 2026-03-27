@@ -78,7 +78,7 @@ async function main() {
   // 1) 登入 admin
   const loginRes = await fetchApi("/api/auth/login", {
     method: "POST",
-    body: { username: "admin", password: "admin123" },
+    body: { username: "admin", password: "86180017" },
   });
   assert(loginRes.ok, `admin 登入失敗: ${loginRes.status}`);
   const loginBody = JSON.parse(loginRes.body);
@@ -180,7 +180,7 @@ async function main() {
   cookieHeader = "";
   await fetchApi("/api/auth/login", {
     method: "POST",
-    body: { username: "admin", password: "admin123" },
+    body: { username: "admin", password: "86180017" },
   });
   const fieldsWithoutId = PRODUCT_FIELDS.filter((f) => f !== "id");
   const limitedClient = `client_limited_${Date.now()}`;

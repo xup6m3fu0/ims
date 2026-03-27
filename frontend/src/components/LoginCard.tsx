@@ -42,11 +42,6 @@ export function LoginCard(props: {
           </button>
         </div>
 
-        <div className="loginHint">
-          預設帳號（可在資料庫自行改掉）：
-          <div className="mono">admin / admin123</div>
-          <div className="mono">viewer / viewer123</div>
-        </div>
       </div>
     </div>
   )
