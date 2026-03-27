@@ -2,8 +2,10 @@ node_modules
 dist
 .DS_Store
 
-# SQLite data
-backend/data
+# SQLite 資料庫（勿提交）；import 資料夾可提交說明與範例 Excel
+backend/data/*.sqlite
+backend/data/*.sqlite-shm
+backend/data/*.sqlite-wal
 backend/*.sqlite
 backend/*.sqlite-shm
 backend/*.sqlite-wal

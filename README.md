@@ -38,7 +38,7 @@ npm run dev
 
 1. 將 **products.xlsx** 或 **products.xls** 放到 **`backend/data/import/`** 資料匣。
 2. Excel 第一列為標題，欄位可用中文（編號、客戶名稱、產品名稱、庫存數量、庫位、狀態、備註）或英文（code, customerName, …）。庫位限 A～E，狀態限 成品／半成品／不良品。
-3. 執行：`cd backend && npm run import:products`
+3. 執行：在專案根目錄 `npm run import:products`，或 `cd backend && npm run import:products`
 
 詳細格式說明見 **`backend/data/import/README.md`**。
 
