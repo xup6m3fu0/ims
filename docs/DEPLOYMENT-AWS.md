@@ -106,7 +106,7 @@ nano .env
 
 ```env
 NODE_ENV=production
-PORT=4000
+PORT=5175
 DATABASE_PATH=./data/ims.sqlite
 CORS_ORIGIN=https://你的網域或留空表示同源
 JWT_SECRET=請使用至少 32 字元隨機字串
@@ -122,7 +122,7 @@ cd ~/ims/backend
 node dist/index.js
 ```
 
-此時 API 在 `http://<主機IP>:4000`。若已設定後端提供靜態檔，同機訪問 `http://<主機IP>:4000` 即可看到前端。
+此時 API 在 `http://<主機IP>:5175`。若已設定後端提供靜態檔，同機訪問 `http://<主機IP>:5175` 即可看到前端。
 
 ### 2.8 啟動方式二：用 systemd 常駐（建議）
 
@@ -175,7 +175,7 @@ server {
     listen 80;
     server_name 你的網域或主機IP;
     location / {
-        proxy_pass http://127.0.0.1:4000;
+        proxy_pass http://127.0.0.1:5175;
         proxy_http_version 1.1;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;

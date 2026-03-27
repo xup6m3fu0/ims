@@ -31,8 +31,8 @@ npm run dev
 ```
 
 - 前端：`http://localhost:5173`
-- 後端：`http://localhost:4000`
-- 健康檢查：`http://localhost:4000/healthz`
+- 後端：`http://localhost:5175`
+- 健康檢查：`http://localhost:5175/healthz`
 
 ## 匯入預設產品資料（Excel）
 

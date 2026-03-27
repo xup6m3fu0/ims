@@ -10,7 +10,7 @@ function required(name: string): string {
 
 export const env = {
   nodeEnv: process.env.NODE_ENV ?? "development",
-  port: Number(process.env.PORT ?? 4000),
+  port: Number(process.env.PORT ?? 5175),
   /** 綁定位址；預設 0.0.0.0 讓同區網可透過主機 IP 存取（如 Mac Mini 當伺服器） */
   listenHost: process.env.LISTEN_HOST ?? "0.0.0.0",
   databasePath: process.env.DATABASE_PATH ?? "data/ims.sqlite",

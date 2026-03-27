@@ -8,7 +8,7 @@
 
 import http from "node:http";
 
-const BASE = process.env.API_BASE || "http://localhost:4000";
+const BASE = process.env.API_BASE || "http://localhost:5175";
 const url = new URL(BASE);
 
 const PRODUCT_FIELDS = [
